@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPRO</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='img/dewa19.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: black;
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .header h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            text-align: center;
+            width: auto;
+            padding: 5px 15px;
+            border: 3px solid white;
+            border-radius: 30px;
+            background-color: white;
+            color: black;
+            margin: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Hello my name is Richard Hasannain Mongide,<br>
+        If you want to know more about me, just check out these buttons</h2>
+        <a href="{{ url_for('biodata') }}" class="button">Biodata</a>
+        <a href="{{ url_for('cv') }}" class="button">CV</a>
+        <a href="{{ url_for('other_biodata') }}" class="button">Hobby</a>
+        <a href="{{ url_for('portfolio') }}" class="button">Portofolio</a>
+        <a href="{{ url_for('fibonacci') }}" class="button">Fibonacci</a>
+        <a href="{{ url_for('json_data') }}" class="button">Jsondata</a>
+        <a href="{{ url_for('show_form') }}" class="button">FORM</a>
+    </div>
+</body>
+</html>
